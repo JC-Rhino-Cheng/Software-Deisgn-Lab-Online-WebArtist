@@ -1,0 +1,70 @@
+body {
+    background-image: url('./src/BackGroundPIC.jpg');
+    /*background-color: gray;*/
+    background-repeat: no-repeat;
+
+    /*width: auto;*/
+    /*height: auto;*/
+    text-align: center;
+    /*margin: auto;*/
+}
+
+div {
+    border: 5px solid #000000;
+    border-radius: 15px;
+    padding: 10px;
+
+    background-color: whitesmoke;
+
+    width: 50%;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+}
+
+canvas {
+    border: 5px solid #000000;/*5*/
+    border-radius: 25px;/*25*/
+    padding: 0px;
+
+    background-color: whitesmoke;
+    
+    /*width: 88%;*/
+    /*height: 500px;*/
+    /*margin: auto;*/
+    width:  88%;
+    height: 73%;
+    margin: auto;
+}
+
+button {
+    border: 0;
+    background: transparent;
+}
+
+table {
+    width: 100%; 
+    table-layout: fixed ;
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin: auto;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.upload_cover {
+    width: 30px;
+    height: 30px;
+}
+.upload_icon {
+    left: 0;
+    width: 100%;
+    top: 20%;
+}

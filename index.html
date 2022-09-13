@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <!--head-->
+    <head>
+        <title>HW1 Canvas 108062124</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+
+        <script src="mainFunc.js"></script>
+    </head>
+    <!--head-->
+
+    <!--body-->
+    <body>
+        <div>
+            <table>
+                <tbody>
+                    <tr class="row">
+                        <td>
+                            <button type="button" class="Stationery" id="Pencil" onclick="Stationery_clicked(this.id)" background-color="gray">
+                                <img src="./src/Stationery/Pencil.png" alt="Pencil"/>
+                            </button>
+                        </td>
+
+                        <td>
+                            <button type="button" class="Stationery" id="Eraser" onclick="Stationery_clicked(this.id)">
+                                <img src="./src/Stationery/Eraser.png" alt="Eraser"/>
+                            </button>
+                        </td>
+
+                        <td>
+                            <button type="button" class="Stationery" id="Text" onclick="Stationery_clicked(this.id)">
+                                <img src="./src/Stationery/Text.png" alt="Text"/>
+                            </button>
+                        </td>
+
+                        <td>
+                            <button type="button" class="Stationery" id="Tri" onclick="Stationery_clicked(this.id)">
+                                <img src="./src/Stationery/Tri.png" alt="Tri"/>
+                            </button>
+                        </td>
+
+                        <td>
+                            <button type="button" class="Stationery" id="Rect" onclick="Stationery_clicked(this.id)">
+                                <img src="./src/Stationery/Rect.png" alt="Rect"/>
+                            </button>
+                        </td>
+
+                        <td>
+                            <button type="button" class="Stationery" id="Circ" onclick="Stationery_clicked(this.id)">
+                                <img src="./src/Stationery/Circ.png" alt="Circ"/>
+                            </button>
+                        </td>
+
+                        <td>
+                            <button type="button" class="Stationery" id="Undo" onclick="undo()">
+                                <img src="./src/Stationery/Undo.png" alt="Undo"/>
+                            </button>
+                        </td>
+
+                        <td>
+                            <button type="button" class="Stationery" id="Redo" onclick="redo()">
+                                <img src="./src/Stationery/Redo.png" alt="Redo"/>
+                            </button>
+                        </td>
+
+                        <td>
+                            <button type="button" class="Stationery Clear" id="Clear" onclick="Stationery_clicked(this.id)">
+                                <img src="./src/Stationery/Clear.png" alt="Clear"/>
+                            </button>
+                        </td>
+
+                        <td>
+                            <button type="button" class="Stationery Down" id="Down" onclick="Stationery_clicked(this.id)">
+                                <img src="./src/Stationery/Down.png" alt="Down"/>
+                            </button>
+                        </td>
+
+                        <td>
+                            <!--原本的code: button type="button" class="Stationery Up" id="Up" onclick="Stationery_clicked(this.id)">
+                                <img src="./src/Stationery/Up.png" alt="Up"/>
+                            </button-->
+
+                            <label for="upload_input" class="upload_cover">
+                                <input id="upload_input" type="file" accept="image/*" style="display: none;" onchange="imgUped(this)">
+                                <a class="upload_icon"><img src="./src/Stationery/Up.png" alt="Up"/></a>
+                            </label>
+                        </td>
+                    </tr>
+
+                    
+                </tbody>
+            </table>
+
+            <table>
+                <tbody>
+                    <tr class="row">
+                        <td>
+                            <label for="colour">Colour</label>
+                            <input type="color" id="colour" name="colour" value="#000000"/>
+                        </td>
+
+                        <td>
+                            <label for="size">Size</label>
+                            <input type="range" id="size" name="size" value="15" min="5" max="25"/>
+                        </td>
+
+                        <td>
+                            <label for="font">Font</label>
+                            <select name="font" id="font">
+                                <option value="Arial" id="Arial" name="Arial" selected="selected">Arial</option>
+                                <option value="Baskerville" id="Baskerville" name="Baskerville">Baskerville</option>
+                                <option value="Futura" id="Futura" name="Futura">Futura</option>
+                                <option value="SimHei" id="SimHei" name="SimHei">SimHei</option>
+                                <option value="SimSun" id="SimSun" name="SimSun">SimSun</option>
+                                <option value="Calibri" id="Calibri" name="Calibri">Calibri</option>
+                                <option value="Comic Sans MS" id="Comic Sans MS" name="Comic Sans MS">Comic Sans MS</option>
+                                <option value="標楷體" id="標楷體" name="標楷體">標楷體</option>
+                            </select>
+                        </td>
+
+                        <td>
+                            <label for="fillShape">Fill</label>
+                            <input type="checkbox" id="fillShape" name="fillShape" checked/>
+                        </td>
+                            
+                    </tr>
+
+                    
+                </tbody>
+            </table>
+        </div>
+        <br>
+
+
+        <canvas id="myCanvas">
+            Your browser does not support the HTML canvas tag.
+        </canvas>
+
+
+
+        <a id="DownLink"></a><!--為了下載功能而設定-->
+    </body>
+    <!--body-->
+
+</html>
+
+
+
