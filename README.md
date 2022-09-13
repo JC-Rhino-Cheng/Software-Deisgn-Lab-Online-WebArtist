@@ -102,6 +102,3 @@ Undo一次還原一個步驟，如果到底了會有提示視窗。Redo也是一
 
 
 
-### Gitlab page link
-
-    https://108062124.gitlab.io/AS_01_WebCanvas/
